@@ -1,0 +1,284 @@
+/*=========================
+  body style (Common style)
+  =========================*/
+main{
+    width: 1400px;
+    margin: 0px auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*=========================
+  section-1 (head-area)
+  =========================*/
+
+  .containter .head-area{
+      background-color: #161616;
+      border-radius: 40px;
+      padding: 50px;
+  }
+
+  .head-area{
+      display: flex;
+      margin-bottom: 30px;
+      
+  }
+
+  .title-area h1{
+        font-size: 60px;
+        font-weight: 700;
+        color: white;
+        width: 50%;
+  }
+
+  .title-area p{
+    font-size: 25px;
+    font-weight: 200;
+    color: white;
+}
+
+
+  .player-area{
+      width: 50%;
+      display: flex;
+      justify-content: left;
+      position: relative;
+  }
+
+  .player-area img{
+      width: 700px;
+      margin-left: 50px;
+  }
+
+  .head-button{
+    background-color: #DD0000;
+    padding: 17px 35px;
+    border-radius: 10px;
+}
+
+  .head-button a{
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;       
+  }
+
+  /*=========================
+  section-2 (middle-area)
+  =========================*/
+.middle-area{
+      display: flex;    
+  }
+
+   /*sidebar*/
+  .left-sidebar{
+      width: 25%;
+      height: 315px;
+      background-color: #161616;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;    
+  }
+
+.left-sidebar button{
+    width: 300px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+
+#blog{
+    background-color: #DD0000;
+    color: #ffffff;
+}
+#blog a{
+    color: #ffffff;
+}
+
+
+.left-sidebar button a{
+    font-size: 20px;
+    color: #161616;
+    text-decoration: none;
+    font-weight: 600; 
+}
+
+
+
+  /*blog area*/
+  .blog-area{
+      width: 75%;
+      box-sizing: border-box;
+  }
+
+  .blogs{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 5px;
+  }
+  .blog-delail h3{
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .duration{
+      display: flex;
+      justify-content: space-around;
+  }
+
+
+
+hr{
+    border: 1px solid rgb(59, 59, 59);
+    width: 1300px;
+}
+
+   /*=========================
+    Footer Area
+  =========================*/
+  footer{
+      padding-top: 80px;
+      width: 100%;
+      height: 350px;
+      background-color: #161616;
+  }
+   footer h1{
+       font-size: 50px;
+       font-weight: 700;
+       color: white;
+       text-align: center;     
+   }
+   
+
+
+.downbar{
+    text-align: center;
+}
+
+   
+ .downbar ul li{
+     display: inline;
+     list-style: none;
+     
+ }
+
+ .downbar ul li a{
+     color: #ffffff;
+     text-decoration: none;
+     position: relative;
+     margin-left: 30px;
+           
+ }
+
+    /*=========================
+     Soial-media style
+  =========================*/
+.soial-media{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soial-media a{
+    background-color: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+    margin: 10px;
+}
+
+.soial-media a i{
+    transition: all .3s linear;
+
+}
+
+.soial-media a:hover i{
+    transform: scale(2);
+}
+
+.fa-facebook{
+    color: #3b5998;
+}
+
+.fa-linkedin{
+    color: #0e76a8;
+}
+
+.fa-youtube{
+    color: #c4302b;
+}
+
+
+    /*=========================
+    Media Query style
+  =========================*/
+  
+  /*style for Mobile:*/
+
+  @media screen and (max-width:576px) {
+    .containter .head-area{
+        background-color: #161616;
+        border-radius: 40px;
+        padding: 50px;
+    }
+  
+    .head-area{
+        display: flex;
+        margin-bottom: 30px;
+        
+    }
+      
+}
+
+  /*style for tablet:*/
+  @media screen and (min-width: 577px) and (max-width:768px) {
+
+    .head-area{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;    
+    }
+
+    .middle-area{
+        flex-direction: column;
+        display: flex;    
+    }
+    .left-sidebar{
+        width: 25%;
+        height: 315px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 5px;
+    }   
+
+    .left-sidebar{
+        width: 100%;
+        height: 315px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;  
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width:768px){
+    footer{
+        width: 100%;
+    }
+    
+    
+}
